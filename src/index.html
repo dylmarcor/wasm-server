@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+	<body>
+		<script type="module">
+			import init, { add } from 'pkg/hello_wasm.js'
+			;(async () => {
+			  await init()
+			  console.log(add(2, 2))
+			})()
+		</script>
+	</body>
+</html>
+
